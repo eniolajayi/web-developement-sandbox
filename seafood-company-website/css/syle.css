@@ -16,6 +16,7 @@
 }
 a {
   color: var(--cream-color);
+  text-decoration: underline var(--gold-color);
 }
 html {
   font-family: "Poppins", sans-serif;
@@ -209,12 +210,105 @@ article {
 
 
 */
+.contact {
+  position: relative;
+  height: 680px;
+  padding: 5rem 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: url("../assets/contact-bg.png");
+  color: var(--cream-color);
+}
+.contact-title .title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 100px;
+  height: 3px;
+  background-color: var(--cream-color);
+}
+.contact::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.11);
+  z-index: -1;
+}
+.contact-header {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-header .promotion-container {
+  width: 30%;
+}
+.contact-cta {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-cta-btn {
+  width: 220px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  background-color: var(--cream-color);
+  color: var(--lighter-bg-color);
+  transition: all 0.5s ease-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2px 0;
+  display: block;
+  font-weight: 600;
+}
+.contact-cta-btn:hover {
+  color: var(--cream-color);
+  background-color: var(--gold-color);
+}
+.contact-ctc-desc {
+  width: 68%;
+}
+.footer {
+  width: 100%;
+  height: 400px;
+  padding: 5rem 7rem;
+  position: relative;
+  color: var(--cream-color);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main-bg-color);
+}
+.footer-box {
+  flex: 3;
+  margin: 0 20px;
+  /* padding: 1rem; */
+}
+.footer-logo {
+  font-size: 1.8rem;
+}
+.footer .footer-social-links {
+  display: block;
+}
+.back-to-top {
+  flex-grow: 2;
+  justify-self: flex-end;
+  align-items: flex-end;
+  display: inline-block;
+}
+.btn-to-top {
+  text-transform: uppercase;
+  text-decoration: none;
+}
 
 .pointer-btn {
   color: brown;
 }
-.pointer-btn .triangle {
+.triangle {
   color: aqua;
-  width: 40px;
-  height: 40px;
+  display: block;
+  width: 100px;
+  height: 100px;
 }
