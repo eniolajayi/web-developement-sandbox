@@ -162,6 +162,7 @@ article {
 
 .process {
   width: 85%;
+  margin-bottom: 6rem;
   color: var(--lighter-bg-color);
 }
 .process-title {
@@ -183,11 +184,12 @@ article {
 }
 .product-card-container {
   display: grid;
-  grid-template-columns: repeat(3, 360px);
+  grid-template-columns: repeat(3, 267px);
   grid-template-rows: 500px;
   justify-content: space-between;
-  grid-gap: 20px;
+  /* grid-gap: 0px; */
   height: 800px;
+  padding: 6rem 0;
 }
 .product-card {
   background-color: #ffffff;
@@ -195,7 +197,8 @@ article {
   flex-direction: column;
 }
 .product-card .product-card-image {
-  flex-grow: 3;
+  height: 400px;
+  overflow: hidden;
 }
 .product-card .product-card-info {
   padding: 2.5rem;
